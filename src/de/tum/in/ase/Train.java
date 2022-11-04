@@ -65,7 +65,8 @@ public class Train {
 //    TODO: need to change to Station class
     public void finishShift() {
         setCurrentStation(new Station("Munich Central Station"));
-        setPassengers(0);
+        moving = false;
+        passengers = 0;
     }
 
     // TODO: Choo choo!
