@@ -40,12 +40,17 @@ public class Station {
     // TODO: acceptTrain
     public void acceptTrain(Train train) {
         this.trains += 1;
-        this.totalPassengers += 1;
+        this.totalPassengers += train.getPassengers();
 
     }
 
     // TODO: equals (checks if the names of two stations are the same, returns true if that is the case)
     public boolean equals(Station station) {
-
+        if (this.getName().compareTo(station.getName()) == 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }

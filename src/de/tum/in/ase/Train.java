@@ -63,7 +63,7 @@ public class Train {
     // TODO: Finish shift
 //    TODO: need to change to Station class
     public void finishShift() {
-        setCurrentStation("Munich Central Station");
+        setCurrentStation(new Station("Munich Central Station"));
         setPassengers(0);
     }
 
@@ -74,7 +74,7 @@ public class Train {
 
     // TODO: toString
     public String toString() {
-        return String.format("The train with the vehicle number %d is currently in the station %s. There are currently %d passengers on board.%n", vehicleNumber, station, passengers);
+        return String.format("The train with the vehicle number %d is currently in the station %s. There are currently %d passengers on board.%n", vehicleNumber, currentStation.getName(), passengers);
     }
 
 }
