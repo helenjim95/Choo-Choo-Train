@@ -55,9 +55,10 @@ public class Train {
 
 
     // TODO: Delay train
+//    question: this or not this
     public void delayTrain() {
-        setMoving(false);
-        setPassengers(getPassengers() / 2);
+        this.setMoving(false);
+        this.setPassengers(getPassengers() / 2);
     }
 
     // TODO: Finish shift
