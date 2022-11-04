@@ -76,7 +76,7 @@ public class Train {
 
     // TODO: toString
     public String toString() {
-        return String.format("The train with the vehicle number %d is currently in the station %s. There are currently %d passengers on board.%n", vehicleNumber, currentStation.getName(), passengers);
+        return String.format("The train with the vehicle number %d is currently in the station %s. There are currently %d passengers on board.", vehicleNumber, currentStation.getName(), passengers);
     }
 
 }
