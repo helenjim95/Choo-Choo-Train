@@ -57,7 +57,7 @@ public class Train {
     // TODO: Delay train
 //    question: this or not this
     public void delayTrain() {
-        this.setMoving(false);
+        moving = false;
         this.setPassengers(getPassengers() / 2);
     }
 
